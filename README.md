@@ -1,42 +1,77 @@
-## 1 Inicializando um repositório
+# Github - Comandos básicos (Sobrevivência)
 
-git init - "Inicializa o versionamento no respectivo diretório"
+## 1 - Inicializando um repositório
+- Inicializa o versionamento no respectivo diretório
+```
+git init 
+```
+## 2 - Status e Commit
+- Verifica o status do repositório
+```
+git status 
+```
+- Adiciona todos os arquivos para serem commitados
+```
+git add . 
+```
 
-# 2 Comandos básicos para sobreviver
-git status - "Verifica o status do repositório"
+- inserir um comentário 
+```
+git commit -m "my commit"
+```
 
-git add . - "Adiciona todos os arquivos para serem commitados"
+## 3 - Visualizando relatório de commits
+- Todos os commits
+```
+git log 
+```
 
-git commit -m "inserir um comentário significativo"
+- Exibe log com hash e título do commit
+```
+git log --oneline 
+```
 
+## 4 - Repositórios
+- Adicionando um repositório remoto
 
-# 3 - Visualizando relatório de commits
+```
+git remote add origin https://github.com/Usuario/Repositorio.git
+```
 
-git log // todos os commits
-git log --oneline // exibe log com hash e título do commit
-Adicionando um repositório remoto
-
-git remote add origin https://github.com/User/Repository.git
-Enviando as modificações para o repositório remoto
-
+- Enviando as modificações para o repositório remoto
+```
 git push origin <branch>
-Puxando alterações do repositório remoto
+```
 
+- Puxando alterações do repositório remoto
+```
 git pull origin <branch>
-4 Trabalhando com branchs
-Criando e locomovendo-se para uma nova branch
+```
 
+## 5 Trabalhando com Branchs
+- Criando uma nova branch e alterando para ela
+
+```
 git checkout -b nome-branch 
-Aplicando merge em branchs
+```
 
-git merge nome-branch // precisa estar na branch de destino
-Visualizando todas as branches existentes no repositório
+- Fazendo merge em branchs
+_precisa estar na branch de destino_
 
+```
+git merge nome-branch
+```
+- Visualizando todas as branches existentes no repositório
+
+```
 git branch
-Deletando uma branch local
-
+```
+- Deletando uma branch local
+```
 git branch -D nome-branch
-Deletando uma branch remoto
+```
 
+- Deletando uma branch remoto
+```
 git push origin :nome-branch
-
+```
