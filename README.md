@@ -55,7 +55,7 @@ git pull origin <branch>
 git checkout -b nome-branch 
 ```
 
-- Fazendo merge em branchs
+- Fazendo merge em branchs:
 _precisa estar na branch de destino_
 
 ```
