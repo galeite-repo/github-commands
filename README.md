@@ -1,4 +1,4 @@
-# README.md1 Inicializando um repositório
+## 1 Inicializando um repositório
 
 git init - "Inicializa o versionamento no respectivo diretório"
 
